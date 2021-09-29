@@ -58,3 +58,12 @@
     visibility: hidden;
     width: 0px;
 }
+
+div.correctNotCorrect {
+    height: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-family: Font2;
+}
