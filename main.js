@@ -193,6 +193,12 @@ function fitSaoTome(country){
     console.log('pais carta rotada '+correctCountry);
     console.log('milisegundos '+miliseconds);
 console.log('indice div '+indexDiv);    
+if(countryClicked!=correctCountry){
+    errorAnswers[cardNumber]=errorAnswers[cardNumber]+1;
+}else{
+correctAnswers=correctAnswers+1;
+}
+
 });
 
     function countryForRotatedCard(){
