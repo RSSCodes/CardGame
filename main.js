@@ -56,3 +56,6 @@ function getFlags(){
     var thePositions= getRandomPositions();
     setTheBoard(theFlags,thePositions);
     const board = document.querySelectorAll('.card');
+    board.forEach(card => 
+        card.addEventListener('click', RotateCard));
+    
