@@ -182,12 +182,13 @@ function fitSaoTome(country){
     $('body').on('click','.radioBtn',function(){
         var countryClicked=$(this).attr('value');
         var idParent=$(this).parent().parent().attr('id');
-        var cardNumber=idParent.split('-')[1];
+           var cardNumber=idParent.split('-')[1];
         cardNumber=parseInt(cardNumber);
-        
+        var correctCountry=countryForRotatedCard();
         console.log('pais clickeado '+countryClicked);
     console.log('id padre '+idParent);
     console.log('numero carta '+cardNumber);
+    console.log('pais carta rotada '+correctCountry);
     });
 
     function countryForRotatedCard(){
@@ -195,7 +196,7 @@ function fitSaoTome(country){
     country=country.split('Flag_of_')[1].replace('.png','');
         return country;
         }
-        
+
     var theFlags=getFlags();
     var thePositions= getRandomPositions();
     setTheBoard(theFlags,thePositions);
