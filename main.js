@@ -48,6 +48,7 @@ function getFlags(){
                 var chosenCountry='',cardNumber=0,cardOptions='',randomIndex='';
     var tmpOptions=[];
                 if(getRotated()==0){
+                    cleanDivAnswers();
                     console.log('rotar carta clickeada');
                     chosenCountry=$(this).find('img').attr('id');
                     console.log('pais elegido '+chosenCountry);
