@@ -235,7 +235,11 @@ correctAnswers=correctAnswers+1;
         }
     return err0rs;
     }
-        
+
+    function coverCard(){     
+    $('div[class="card rotate"]').eq(0).attr('class','card');
+    } 
+    
     var theFlags=getFlags();
     var thePositions= getRandomPositions();
     setTheBoard(theFlags,thePositions);
