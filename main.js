@@ -44,6 +44,13 @@ function getFlags(){
                 return cardsRotated;   
                }
            
+               function RotateCard() {
+                var chosenCountry='';
+                if(getRotated()==0){
+
+                }
+
+               }
 
     var theFlags=getFlags();
     var thePositions= getRandomPositions();
