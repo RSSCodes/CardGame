@@ -186,12 +186,14 @@ function fitSaoTome(country){
         cardNumber=parseInt(cardNumber);
         var correctCountry=countryForRotatedCard();
         var miliseconds=1300;
+        var indexDiv=Math.floor(cardNumber/4);
         console.log('pais clickeado '+countryClicked);
     console.log('id padre '+idParent);
     console.log('numero carta '+cardNumber);
     console.log('pais carta rotada '+correctCountry);
     console.log('milisegundos '+miliseconds);
-    });
+console.log('indice div '+indexDiv);    
+});
 
     function countryForRotatedCard(){
     var country=$('[class="card rotate"]').find('img').attr('src');
