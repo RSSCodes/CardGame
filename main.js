@@ -197,6 +197,13 @@ function fitSaoTome(country){
         return country;
         }
 
+        function vectorError(){
+            errors=[];
+           var i=0;
+           for(i=0;i<12;i++){errors.push(0);}
+            return errors;
+        }
+        
     var theFlags=getFlags();
     var thePositions= getRandomPositions();
     setTheBoard(theFlags,thePositions);
