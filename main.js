@@ -50,6 +50,7 @@ function getFlags(){
                     console.log('rotar carta clickeada');
                     chosenCountry=$(this).find('img').attr('id');
                     console.log('pais elegido '+chosenCountry);
+                    $(this).addClass('rotate');
                 }
 
                }
