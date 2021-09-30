@@ -219,6 +219,11 @@ $('.correctNotCorrect').eq(indexDiv).text('acertaste!!!');
     }else{
         $('.correctNotCorrect').eq(indexDiv).text('acertaste!!!');       
     }
+    setTimeout(()=>{
+        $('[class="card rotate"]').css('visibility','hidden');
+    coverCard();
+    },miliseconds);    
+
 }
 
 });
