@@ -38,6 +38,12 @@ function getFlags(){
                 }
             }
              
+            function getRotated(){
+                var cardsRotated=
+                $('div[class="card rotate"]').length;
+                return cardsRotated;   
+               }
+           
 
     var theFlags=getFlags();
     var thePositions= getRandomPositions();
