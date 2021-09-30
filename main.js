@@ -47,7 +47,7 @@ function getFlags(){
                function RotateCard() {
                 var chosenCountry='';
                 if(getRotated()==0){
-
+                    console.log('rotar carta clickeada');
                 }
 
                }
