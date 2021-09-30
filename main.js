@@ -214,6 +214,9 @@ if(countryClicked!=correctCountry){
 
 }else{
 correctAnswers=correctAnswers+1;
+if(correctAnswers!=12){
+$('.correctNotCorrect').eq(indexDiv).text('acertaste!!!');
+    }
 }
 
 });
