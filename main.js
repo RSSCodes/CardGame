@@ -203,7 +203,14 @@ if(countryClicked!=correctCountry){
         }else{
         $('.correctNotCorrect').eq(indexDiv).
         text('fallaste :(');}
-        
+
+        setTimeout(()=>{
+            coverCard();
+            if(twoErrors(errorAnswers)==true){
+            //alert('ya fallaste 2 veces, \na barajear otra vez :P');
+            document.location.reload();
+            }},miliseconds);
+                    
 
 }else{
 correctAnswers=correctAnswers+1;
@@ -239,7 +246,7 @@ correctAnswers=correctAnswers+1;
     function coverCard(){     
     $('div[class="card rotate"]').eq(0).attr('class','card');
     } 
-    
+
     var theFlags=getFlags();
     var thePositions= getRandomPositions();
     setTheBoard(theFlags,thePositions);
