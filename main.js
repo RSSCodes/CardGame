@@ -53,6 +53,11 @@ function getFlags(){
                     $(this).addClass('rotate');
                     cardNumber=parseInt(chosenCountry.split('-')[1]);
                     console.log('numero carta '+cardNumber);
+                    if(theOptions[cardNumber].length<3){
+                        theOptions[cardNumber].push(chosenCountry.split('-')[0]);
+                        
+                        }
+                
                 }
 
                }
