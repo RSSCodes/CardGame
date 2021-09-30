@@ -190,6 +190,12 @@ function fitSaoTome(country){
     console.log('numero carta '+cardNumber);
     });
 
+    function countryForRotatedCard(){
+    var country=$('[class="card rotate"]').find('img').attr('src');
+    country=country.split('Flag_of_')[1].replace('.png','');
+        return country;
+        }
+        
     var theFlags=getFlags();
     var thePositions= getRandomPositions();
     setTheBoard(theFlags,thePositions);
