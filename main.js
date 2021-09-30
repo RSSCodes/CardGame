@@ -57,7 +57,7 @@ function getFlags(){
                         theOptions[cardNumber].push(chosenCountry.split('-')[0]);
                         
                         }
-                
+                        addOptions(cardNumber);
                 }
 
                }
