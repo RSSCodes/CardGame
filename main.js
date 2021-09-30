@@ -45,12 +45,14 @@ function getFlags(){
                }
            
                function RotateCard() {
-                var chosenCountry='';
+                var chosenCountry='',cardNumber=0;
                 if(getRotated()==0){
                     console.log('rotar carta clickeada');
                     chosenCountry=$(this).find('img').attr('id');
                     console.log('pais elegido '+chosenCountry);
                     $(this).addClass('rotate');
+                    cardNumber=parseInt(chosenCountry.split('-')[1]);
+                    console.log('numero carta '+cardNumber);
                 }
 
                }
