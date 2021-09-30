@@ -224,3 +224,4 @@ function fitSaoTome(country){
         card.addEventListener('click', RotateCard));
     var theOptions = optionMatrix(theFlags);
     var errorAnswers=vectorError();
+    var correctAnswers=0;
