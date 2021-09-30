@@ -216,6 +216,8 @@ if(countryClicked!=correctCountry){
 correctAnswers=correctAnswers+1;
 if(correctAnswers!=12){
 $('.correctNotCorrect').eq(indexDiv).text('acertaste!!!');
+    }else{
+        $('.correctNotCorrect').eq(indexDiv).text('acertaste!!!');       
     }
 }
 
