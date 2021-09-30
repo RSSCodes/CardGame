@@ -181,7 +181,9 @@ function fitSaoTome(country){
 
     $('body').on('click','.radioBtn',function(){
         var countryClicked=$(this).attr('value');
+        var idParent=$(this).parent().parent().attr('id');
     console.log('pais clickeado '+countryClicked);
+    console.log('id padre '+idParent);
     });
 
     var theFlags=getFlags();
