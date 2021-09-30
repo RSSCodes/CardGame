@@ -45,7 +45,7 @@ function getFlags(){
                }
            
                function RotateCard() {
-                var chosenCountry='',cardNumber=0,cardOptions='';
+                var chosenCountry='',cardNumber=0,cardOptions='',randomIndex='';
                 if(getRotated()==0){
                     console.log('rotar carta clickeada');
                     chosenCountry=$(this).find('img').attr('id');
@@ -60,6 +60,8 @@ function getFlags(){
                         addOptions(cardNumber);
                         cardOptions=theOptions[cardNumber];
                         console.log('opciones carta '+cardOptions);
+                        randomIndex=zeroToRandom();
+                        console.log('random index '+randomIndex);
                 }
 
                }
