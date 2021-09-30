@@ -182,8 +182,12 @@ function fitSaoTome(country){
     $('body').on('click','.radioBtn',function(){
         var countryClicked=$(this).attr('value');
         var idParent=$(this).parent().parent().attr('id');
-    console.log('pais clickeado '+countryClicked);
+        var cardNumber=idParent.split('-')[1];
+        cardNumber=parseInt(cardNumber);
+        
+        console.log('pais clickeado '+countryClicked);
     console.log('id padre '+idParent);
+    console.log('numero carta '+cardNumber);
     });
 
     var theFlags=getFlags();
