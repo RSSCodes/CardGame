@@ -217,11 +217,12 @@ correctAnswers=correctAnswers+1;
 if(correctAnswers!=12){
 $('.correctNotCorrect').eq(indexDiv).text('acertaste!!!');
     }else{
-        $('.correctNotCorrect').eq(indexDiv).text('acertaste!!!');       
+        $('.correctNotCorrect').eq(indexDiv).text('YA GANASTE');       
     }
     setTimeout(()=>{
         $('[class="card rotate"]').css('visibility','hidden');
     coverCard();
+    if(correctAnswers==12){document.location.reload();}
     },miliseconds);    
 
 }
