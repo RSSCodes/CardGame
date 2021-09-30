@@ -195,6 +195,16 @@ function fitSaoTome(country){
 console.log('indice div '+indexDiv);    
 if(countryClicked!=correctCountry){
     errorAnswers[cardNumber]=errorAnswers[cardNumber]+1;
+
+    if(twoErrors(errorAnswers)==true){
+        $('.correctNotCorrect').eq(indexDiv).
+        text('ya fallaste 2 veces, \na barajear otra vez :P');
+        miliseconds=900;
+        }else{
+        $('.correctNotCorrect').eq(indexDiv).
+        text('fallaste :(');}
+        
+
 }else{
 correctAnswers=correctAnswers+1;
 }
