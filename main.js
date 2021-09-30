@@ -185,10 +185,12 @@ function fitSaoTome(country){
            var cardNumber=idParent.split('-')[1];
         cardNumber=parseInt(cardNumber);
         var correctCountry=countryForRotatedCard();
+        var miliseconds=1300;
         console.log('pais clickeado '+countryClicked);
     console.log('id padre '+idParent);
     console.log('numero carta '+cardNumber);
     console.log('pais carta rotada '+correctCountry);
+    console.log('milisegundos '+miliseconds);
     });
 
     function countryForRotatedCard(){
