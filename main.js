@@ -9,4 +9,6 @@ function getFlags(){
     }
     return flagS;
     }
-    
+
+
+    theFlags=getFlags();
