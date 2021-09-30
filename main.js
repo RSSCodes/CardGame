@@ -223,3 +223,4 @@ function fitSaoTome(country){
     board.forEach(card => 
         card.addEventListener('click', RotateCard));
     var theOptions = optionMatrix(theFlags);
+    var errorAnswers=vectorError();
