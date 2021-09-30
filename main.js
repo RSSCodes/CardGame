@@ -132,7 +132,11 @@ function getFlags(){
                             }
                             }
         
-
+function cleanDivAnswers(){
+    $('.correctNotCorrect').eq(0).text('');
+    $('.correctNotCorrect').eq(1).text('');
+    $('.correctNotCorrect').eq(2).text('');
+}
     var theFlags=getFlags();
     var thePositions= getRandomPositions();
     setTheBoard(theFlags,thePositions);
