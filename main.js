@@ -55,6 +55,20 @@ function getFlags(){
 
                }
 
+               function generate2Random(){
+                var i=0;
+                var positions=[];
+                var RandomNumber=0;
+                while(positions.length!=2){
+                RandomNumber=Math.floor(Math.random()*12);
+                while(positions.includes(RandomNumber) ){
+                RandomNumber=Math.floor(Math.random()*12);
+                }
+                positions.push(RandomNumber);
+                }
+                return positions;
+                }
+            
     var theFlags=getFlags();
     var thePositions= getRandomPositions();
     setTheBoard(theFlags,thePositions);
