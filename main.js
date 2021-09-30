@@ -179,6 +179,11 @@ function fitSaoTome(country){
     }else{return country;}
     }
 
+    $('body').on('click','.radioBtn',function(){
+        var countryClicked=$(this).attr('value');
+    console.log('pais clickeado '+countryClicked);
+    });
+
     var theFlags=getFlags();
     var thePositions= getRandomPositions();
     setTheBoard(theFlags,thePositions);
